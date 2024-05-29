@@ -2,6 +2,7 @@
 
 * Студент: [Кирилл Леухин](https://up.htmlacademy.ru/htmlcss/40/user/2250829).
 * Наставник: [Андрей Грачев](https://htmlacademy.ru/profile/angra).
+* Сайт: [Мой проект Седона](https://kirsecond.github.io/-/)
 
 ---
 
