@@ -30,7 +30,7 @@
       <li class="navigation-user-item">
         <a href="#" class="navigation-user-link navigation-user-link-favourite">
           <span class="visually-hidden">Избранное</span>
-          <span class="navigation-user-link-favourite-number"></span>
+          <span class="navigation-user-link-favourite-number">12</span>
         </a>
       </li>
       <li class="navigation-user-item">
@@ -39,31 +39,32 @@
     </ul>
   </header>
   <main class="main-catalog" data-test="main">
+    <h1 class="catalog-title">Гостиницы Седоны</h1>
+    <ol class="site-tree">
+      <li class="site-tree-item">
+        <a href="index.html" class="site-tree-link">
+          <span class="visually-hidden">На главную</span>
+        </a>
+      </li>
+      <li class="site-tree-item">
+        <a class="site-tree-link" href="#">Гостиницы</a>
+      </li>
+    </ol>
     <section class="filter" data-test="filter">
-      <h1 class="catalog-title">Гостиницы Седоны</h1>
-      <ul class="site-tree">
-        <li class="site-tree-item">
-          <a href="index.html" class="site-tree-link">
-            <span class="visually-hidden">На главную</span>
-          </a>
-        </li>
-        <li class="site-tree-item">
-          <a class="site-tree-link">Гостиницы</a>
-        </li>
-      </ul>
+      <h2 class="visually-hidden">Фильтры</h2>
       <form action="https://echo.htmlacademy.ru/" class="catalog-filter-form">
         <fieldset class="catalog-filter-group">
           <legend class="fieldset-title">Инфраструктура:</legend>
           <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
               <label>
-                <input type="checkbox" name="pool">
+                <input type="checkbox" name="pool" checked>
                 Бассейн
               </label>
             </li>
             <li class="catalog-filter-item">
               <label>
-                <input type="checkbox" name="parking">
+                <input type="checkbox" name="parking" checked>
                 Парковка
               </label>
             </li>
@@ -80,7 +81,7 @@
           <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
               <label>
-                <input type="radio" name="home-type" value="Гостиница">
+                <input type="radio" name="home-type" value="Гостиница" checked>
                 Гостиницв
               </label>
             </li>
@@ -220,8 +221,11 @@
       <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
       <p class="newsletter-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form action="https://echo.htmlacademy.ru/" class="newsletter-form">
-        <input type="email" placeholder="Ваш e-mail" class="email-input">
-        <input type="submit" value="Подписаться" class="newsletter-button">
+        <p class="subscribe-form-name">
+          <label for="user-email" class="visually-hidden">Ваш e-mail</label>
+          <input type="email" placeholder="Ваш e-mail" class="email-input" id="user-email">
+        </p>
+        <button type="submit" class="newsletter-button">Подписаться</button>
       </form>
     </section>
   </main>
