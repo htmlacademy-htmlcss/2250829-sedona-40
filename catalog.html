@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Гостиницы в Седоне</title>
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
   <header class="page-header" data-test="header">
@@ -18,7 +19,7 @@
         <a href="#" class="navigation-link">О Седоне</a>
       </li>
       <li class="navigation-item">
-        <a href="catalog.html" class="navigation-link">Гостиницы</a>
+        <a href="catalog.html" class="navigation-link current">Гостиницы</a>
       </li>
     </ul>
     <ul class="navigation-user">
@@ -37,6 +38,7 @@
     <a href="#" class="navigation-button">Хочу сюда!</a>
   </header>
   <main class="main-catalog" data-test="main">
+    <div class="catalog-filter-container">
     <h1 class="catalog-title">Гостиницы Седоны</h1>
     <ol class="site-tree">
       <li class="site-tree-item">
@@ -112,6 +114,7 @@
         <button type="reset" class="catalog-filter-reset">Сбросить</button>
       </form>
     </section>
+  </div>
     <section class="catalog-hotels" data-test="catalog">
       <h2 class="catalog-hotels-title">Найдено гостиниц: <span>38</span></h2>
       <select name="Сортировка" id="catalog-hotels-sort" class="catalog-hotels-sort">
@@ -215,15 +218,15 @@
         </li>
       </ul>
     </section>
-    <section class="newsletter" data-test="subscribe">
-      <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
-      <p class="newsletter-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
-      <form action="https://echo.htmlacademy.ru/" class="newsletter-form">
+    <section class="subscribe catalog-subscribe" data-test="subscribe">
+      <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+      <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <form action="https://echo.htmlacademy.ru/" class="subscribe-form">
         <p class="subscribe-form-name">
           <label for="user-email" class="visually-hidden">Ваш e-mail</label>
           <input type="email" placeholder="Ваш e-mail" class="email-input" id="user-email" required>
         </p>
-        <button type="submit" class="newsletter-button">Подписаться</button>
+        <button type="submit" class="subscribe-button">Подписаться</button>
       </form>
     </section>
   </main>
