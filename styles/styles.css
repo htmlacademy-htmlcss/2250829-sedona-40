@@ -19,8 +19,24 @@ body {
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
-  background-color: white;
+  background-color: #F2F2F2;
   color: #333333;
+}
+
+.main-index {
+  background-color: white
+}
+
+.main-catalog {
+  background-color: white;
+}
+
+.page-header {
+  background-color: white;
+}
+
+.page-footer {
+  background-color: white;
 }
 
 img {
