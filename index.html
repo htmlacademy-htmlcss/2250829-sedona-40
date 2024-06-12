@@ -11,33 +11,35 @@
 </head>
 <body>
   <header class="page-header" data-test="header">
-    <a class="navigation-logo" href="index.html">
-      <img src="images/logo.svg" width="140" height="70" alt="Логотип Седоны" class="page-header-logo">
-    </a>
-    <ul class="navigation">
-      <li class="navigation-item">
-        <a href="index.html" class="navigation-link current">Главная</a>
-      </li>
-      <li class="navigation-item">
-        <a href="#" class="navigation-link">О Седоне</a>
-      </li>
-      <li class="navigation-item">
-        <a href="catalog.html" class="navigation-link">Гостиницы</a>
-      </li>
-    </ul>
-    <ul class="navigation-user">
-      <li class="navigation-user-item">
-        <a href="#" class="navigation-user-link navigation-user-link-search">
-          <span class="visually-hidden">Поиск</span>
-        </a>
-      </li>
-      <li class="navigation-user-item">
-        <a href="#" class="navigation-user-link navigation-user-link-search">
-          <span class="visually-hidden">Избранное</span>
-          <span class="navigation-user-link-favourite-number">12</span>
-        </a>
-      </li>
-    </ul>
+    <nav class="navigation">
+      <a class="navigation-logo" href="index.html">
+        <img src="images/logo.svg" width="140" height="70" alt="Логотип Седоны" class="page-header-logo">
+      </a>
+      <ul class="navigation-list">
+        <li class="navigation-item">
+          <a href="index.html" class="navigation-link current">Главная</a>
+        </li>
+        <li class="navigation-item">
+          <a href="#" class="navigation-link">О Седоне</a>
+        </li>
+        <li class="navigation-item">
+          <a href="catalog.html" class="navigation-link">Гостиницы</a>
+        </li>
+      </ul>
+      <ul class="navigation-user">
+        <li class="navigation-user-item">
+          <a href="#" class="navigation-user-link navigation-user-link-search">
+            <span class="visually-hidden">Поиск</span>
+          </a>
+        </li>
+        <li class="navigation-user-item">
+          <a href="#" class="navigation-user-link navigation-user-link-search">
+            <span class="visually-hidden">Избранное</span>
+            <span class="navigation-user-link-favourite-number">12</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
     <a href="#" class="navigation-button">Хочу сюда!</a>
   </header>
   <main class="main-index" data-test="main">
@@ -50,7 +52,7 @@
       <p class="lead">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
       <p class="advantages-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
       <ul class="advantages-list">
-        <li class="advantages-item">
+        <li class="advantages-item advantages-item-width">
           <h3 class="advantages-item-title">Настоящий городок</h3>
           <p class="advantages-item-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
           <img src="images/mountain-house.jpg" width="800" height="385" alt="Дома в горах" class="advantages-img">
@@ -67,7 +69,7 @@
           <h3 class="advantages-item-title">Мало туристов</h3>
           <p class="advantages-item-text">Большинство едет в Гранд Каньон и толпится там</p>
         </li>
-        <li class="advantages-item">
+        <li class="advantages-item advantages-item-width">
           <h3 class="advantages-item-title">Там есть мост дьявола</h3>
           <p class="advantages-item-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
           <img src="images/demon-bridge.jpg" width="800" height="385" alt="Мост Дьявола" class="advantages-img">
@@ -79,15 +81,15 @@
       <p class="infrastructure-lead">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
       <p class="infrastructure-text">Опытный персонал и качественное обслуживание!</p>
       <ul class="infrastructure-list">
-        <li class="infrastructure-item house">
+        <li class="infrastructure-item home-icon">
           <h3 class="infrastructure-item-title">Жильё</h3>
           <p class="infrastructure-item-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
         </li>
-        <li class="infrastructure-item food">
+        <li class="infrastructure-item food-icon">
           <h3 class="infrastructure-item-title">Еда</h3>
           <p class="infrastructure-item-text">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
         </li>
-        <li class="infrastructure-item gifts">
+        <li class="infrastructure-item gifts-icon">
           <h3 class="infrastructure-item-title">Сувениры</h3>
           <p class="infrastructure-item-text">Не только китайского, но и настоящего местного производства!</p>
         </li>
