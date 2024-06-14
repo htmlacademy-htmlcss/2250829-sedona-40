@@ -1,3 +1,4 @@
+/*Подключение шрифтов*/
 @font-face {
   font-family: "PT sans";
   src: url("../fonts/ptsans-400.woff2") format("woff2");
@@ -14,6 +15,12 @@
   font-display: swap;
 }
 
+/*Общие стили*/
+
+html {
+  height: 100%
+}
+
 body {
   font-family: "PT sans", sans-serif;
   font-size: 22px;
@@ -21,8 +28,14 @@ body {
   line-height: 26px;
   background-color: #f2f2f2;
   color: #333333;
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
+/*Базовая стилизация*/
 .main-index {
   background-color: #ffffff
 }
@@ -202,10 +215,12 @@ li.advantages-item-width {
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
+  text-align: center;
 }
 
 .subscribe-text {
   color: #333333;
+  text-align: center;
 }
 
 .index-subscribe {
@@ -413,25 +428,6 @@ li.advantages-item-width {
   text-align: center;
 }
 
-/*
-Исправление поведения картинок на всякий случай
-.page-header-logo {
-  display: block
-}
-
-.welcome-img {
-  display: block
-}
-
-.advantages-img {
-  display: block;
-}
-
-.catalog-hotel-card-img {
-  display: block;
-}
-*/
-
 .interval {
   font-size: 18px;
   font-weight: 700;
@@ -445,3 +441,284 @@ li.advantages-item-width {
   text-align: right;
   color: #000000;
 }
+
+/*Крупные сетки страниц*/
+.main-container {
+  flex-grow: 1;
+  width: 1200px;
+  margin: 0 auto
+}
+
+.page-header {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.page-footer {
+  width: 1200px;
+  margin: 0 auto
+}
+
+.header-wrapper {
+  display: flex;
+  margin: 0 auto;
+  width: 1060px
+}
+
+.navigation {
+  display: flex;
+  margin-right: 20px
+}
+
+.navigation ul {
+  margin: 0;
+  padding: 0
+}
+
+.navigation-list {
+  width: 440px
+}
+
+.navigation-user {
+  max-width: 132px;
+  margin-left: auto
+}
+
+.page-header-logo {
+  margin-right: 30px;
+}
+
+.navigation-button {
+  margin-left: auto;
+  margin: 0
+}
+
+.welcome-img {
+  display: block;
+  margin: 0 auto
+}
+
+.advantages-lead-wrapper {
+  width: 651px;
+  margin: 0 auto
+}
+
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  width: 100%
+}
+
+.advantages-item {
+  width: 400px;
+  padding-left: 85px;
+  padding-right: 85px;
+  box-sizing: border-box
+}
+
+.advantages-item-width-wrapper {
+  width: 400px;
+  padding-left: 85px;
+  padding-right: 85px;
+  box-sizing: border-box
+}
+
+.advantages-item-width {
+  width: 100%;
+  padding: 0
+}
+
+.infrastructure-lead-wrapper {
+  width: 505px;
+  margin: 0 auto
+}
+
+.infrastructure-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0
+}
+
+.infrastructure-item {
+  width: 400px;
+  padding-left: 85px;
+  padding-right: 85px;
+  box-sizing: border-box
+}
+
+.search {
+  width: 592px;
+  margin: 0 auto
+}
+
+.subscribe {
+  width: 684px;
+  padding-left: 258px;
+  padding-right: 258px
+}
+
+.subscribe-form {
+  width: 100%
+}
+
+.footer-wrapper {
+  padding-left: 70px;
+  padding-right: 70px;
+  width: 1060px;
+  display: flex;
+  justify-content: space-between
+}
+
+.social-list {
+  margin: 0;
+  padding: 0;
+  width: 142px
+}
+
+.telephone {
+  width: 720px
+}
+
+.catalog-filter-container {
+  width: 1060px;
+  padding-right: 70px;
+  padding-left: 70px
+}
+
+.site-tree {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 114px;
+}
+
+/*
+Размеры хлебных крошек
+.site-tree-item-home {
+  width: 13px;
+}
+
+.site-tree-item-catalog {
+  width: 73px;
+}
+*/
+
+.catalog-filter-form {
+  display: flex;
+}
+
+.catalog-filter-group {
+  padding: 0;
+  width: 150px;
+  margin: 0;
+}
+
+.catalog-filter-group-infrastructure {
+  margin-right: 70px;
+}
+
+.catalog-filter-group-type {
+  margin-right: 140px;
+}
+
+.catalog-filter-group-price {
+  width: 288px;
+  margin-right: 70px;
+}
+
+.filter-buttons-container {
+  width: 191px;
+}
+
+.catalog-filter-list {
+  margin: 0;
+  padding: 0
+}
+
+.catalog-hotels {
+  width: 1060px;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.catalog-hotels-lead-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.catalog-hotels-title {
+  width: 338px;
+}
+
+.catalog-hotels-sort {
+  width: 292px;
+}
+
+.view-buttons {
+  width: 160px;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-hotels-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.catalog-hotel-card {
+  width: 340px;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-right: 20px;
+}
+
+.catalog-hotel-card:nth-child(3n) {
+  margin-right: 0;
+}
+
+.pagination-list {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.pagination-item {
+  width: 60px;
+}
+
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.pagination-link {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.pagination-text {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+/*
+Исправление поведения картинок на всякий случай
+
+
+
+.advantages-img {
+  display: block;
+}
+
+.catalog-hotel-card-img {
+  display: block;
+}
+*/
