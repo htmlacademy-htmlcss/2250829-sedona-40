@@ -467,7 +467,9 @@ li.advantages-item-width {
 
 .navigation {
   display: flex;
-  margin-right: 20px
+  margin-right: 20px;
+  width: 880px;
+  justify-content: space-between;
 }
 
 .navigation ul {
@@ -476,21 +478,22 @@ li.advantages-item-width {
 }
 
 .navigation-list {
-  width: 440px
+  width: 340px;
+  flex-grow: 1;
 }
 
 .navigation-user {
-  max-width: 132px;
-  margin-left: auto
+  max-width: 180px;
+  margin-left: auto;
 }
 
-.page-header-logo {
+.navigation-logo {
   margin-right: 30px;
 }
 
 .navigation-button {
+  width: 160px;
   margin-left: auto;
-  margin: 0
 }
 
 .welcome-img {
@@ -556,6 +559,11 @@ li.advantages-item-width {
 
 .subscribe {
   width: 684px;
+  margin: 0 auto;
+}
+
+.index-subscribe {
+  margin: 0;
   padding-left: 258px;
   padding-right: 258px
 }
