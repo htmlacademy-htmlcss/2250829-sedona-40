@@ -240,6 +240,9 @@ img {
   color: #ffffff;
 }
 
+.demon-bridge {
+  order: -1
+}
 /*Инфраструктура*/
 .infrastructure-lead-wrapper {
   width: 505px;
@@ -489,12 +492,18 @@ img {
   display: flex;
   list-style-type: none;
   margin-bottom: 40px;
+  align-items: center;
+  flex-wrap: wrap
 }
 
 .site-tree-item-home {
+  margin-right: 28px;
+}
+
+.site-tree-item-home a {
   min-width: 13px;
   min-height: 15px;
-  margin-right: 28px;
+  display: block
 }
 
 .site-tree-link {
