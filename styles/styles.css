@@ -770,7 +770,7 @@ img {
   padding-right: 24.55px;
 }
 
-.pagination-item:last-child .pagination-link {
+.pagination-item:nth-child(5) ~ li .pagination-link {
   width: 23px;
   padding-left: 18.45px;
   padding-right: 18.55px;
