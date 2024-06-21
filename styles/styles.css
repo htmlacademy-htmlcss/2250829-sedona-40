@@ -246,7 +246,7 @@ img {
 /*Инфраструктура*/
 .infrastructure-lead-wrapper {
   width: 505px;
-  margin: 69px auto;
+  margin: 64px auto;
 }
 
 .infrastructure-list {
@@ -435,22 +435,23 @@ img {
   width: 1060px;
   display: flex;
   align-items: center;
-  padding: 5px 0
+  padding: 5px 0;
+  justify-content: space-between
 }
 
 .social-list {
   margin: 0;
   padding: 0;
-  width: 200px;
+  width: 142px;
   display: flex;
   list-style-type: none;
-  margin-right: 178.5px
+  flex-wrap: wrap
 }
 
 .social-link {
   padding: 13px 12px;
   display: block;
-  min-width: 48px;
+  min-width: 47.33px;
   min-height: 40px;
   /*border: 2px solid black; Вспомогательная рамка*/
   box-sizing: border-box
@@ -463,12 +464,8 @@ img {
   text-align: center;
   text-decoration: none;
   color: #000000;
-  width: 350px;
+  width: 335px;
   padding: 0;
-}
-
-.copyright {
-  margin-left: auto
 }
 
 .html-logo {
