@@ -340,7 +340,11 @@ img {
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 8px 50px
+  padding: 8px 50px;
+  display: block;
+  box-sizing: border-box;
+  width: 376px;
+  margin: 0 auto
 }
 
 
@@ -352,10 +356,6 @@ img {
   padding-bottom: 104px
 }
 
-.subscribe-form {
-  width: 100%;
-  display: flex;
-}
 
 .subscribe-title {
   font-size: 30px;
@@ -391,6 +391,11 @@ img {
 
 .index-subscribe h2 {
   color: #ffffff;
+}
+
+.subscribe-form {
+  width: 100%;
+  display: flex;
 }
 
 .index-subscribe p {
@@ -429,7 +434,8 @@ img {
   margin-bottom: 30px;
   width: 1060px;
   display: flex;
-  align-items: center
+  align-items: center;
+  padding: 5px 0
 }
 
 .social-list {
@@ -464,6 +470,11 @@ img {
 .copyright {
   margin-left: auto
 }
+
+.html-logo {
+  display: block
+}
+
 /*Основное содержание каталога*/
 /*Фильтер каталога*/
 .catalog-filter-container {
@@ -503,7 +514,6 @@ img {
 .site-tree-item-home a {
   min-width: 13px;
   min-height: 15px;
-  display: block
 }
 
 .site-tree-link {
@@ -513,6 +523,7 @@ img {
   text-align: left;
   text-decoration: none;
   color: #ffffff;
+  display: block
 }
 
 .catalog-filter-form {
@@ -655,43 +666,56 @@ img {
 .catalog-hotels-list {
   margin: 0;
   padding: 0;
-  display: flex;
   width: 100%;
-  flex-wrap: wrap;
   gap: 20px;
   margin-bottom: 40px;
   padding-bottom: 40px;
-  list-style-type: none
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(3, 340px)
 }
 
 .catalog-hotel-card {
-  width: 340px;
   box-sizing: border-box;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  column-gap: 20px;
+  row-gap: 16px
 }
 
 .catalog-hotel-card-link {
   text-decoration: none;
   color: #000000;
+  display: block;
+  grid-column: 1 / -1
 }
 
 .catalog-hotel-card-title {
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
+  margin: 0
+}
+
+.catalog-hotel-card-img {
+  display: block;
+  margin-bottom: 16px
 }
 
 .catalog-hotel-type {
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
+  margin: 0
 }
 
 .catalog-hotel-price {
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
+  text-align: right;
+  margin: 0
 }
 
 .catalog-hotel-link {
@@ -703,6 +727,8 @@ img {
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
+  display: block;
+  padding: 8px 26px
 }
 
 .catalog-hotel-favourite {
@@ -714,6 +740,8 @@ img {
   text-decoration: none;
   background-color: #7db54f;
   color: #ffffff;
+  display: block;
+  padding: 8px 18px
 }
 
 .catalog-hotel-favourite-add {
@@ -725,6 +753,8 @@ img {
   text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;
+  display: block;
+  padding: 8px 20px
 }
 
 .catalog-hotel-rating {
@@ -734,6 +764,13 @@ img {
   text-align: center;
   background-color: #f2f2f2;
   text-transform: uppercase;
+  margin: 0;
+  padding-right: 22px;
+  padding-left: 23px;
+  padding-top: 9px;
+  padding-bottom: 8px;
+  height: 37px;
+  box-sizing: border-box
 }
 
 /*Пагинация*/
