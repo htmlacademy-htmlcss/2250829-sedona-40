@@ -196,14 +196,16 @@ img {
 .advantages-item-width-wrapper {
   width: 400px;
   padding: 102px 85px;
-  box-sizing: border-box
+  box-sizing: border-box;
+  min-height: 385px
 }
 
 .advantages-item {
   background-color: rgba(131, 179, 211, 0.12);
   width: 400px;
   padding: 112px 85px;
-  box-sizing: border-box
+  box-sizing: border-box;
+  min-height: 385px
 }
 
 .advantages-item-title {
@@ -277,10 +279,9 @@ img {
 .infrastructure-item {
   background-color: rgba(131, 179, 211, 0.12);
   width: 400px;
-  padding-left: 85px;
-  padding-right: 85px;
   box-sizing: border-box;
-  padding: 81px 85px
+  padding: 81px 85px;
+  min-height: 385px
 }
 
 .infrastructure-item-title {
@@ -644,11 +645,9 @@ img {
   padding: 0;
   display: flex;
   list-style-type: none;
-  align-items: center
-}
-
-.view-button-item:not(:last-child) {
-  margin-right: 8px
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px
 }
 
 .view-button-item a {
@@ -782,11 +781,6 @@ img {
   list-style-type: none
 }
 
-.pagination-item {
-  width: 60px;
-  height: 60px
-}
-
 .pagination-link {
   font-size: 20px;
   font-weight: 700;
@@ -795,19 +789,13 @@ img {
   background-color: #82b3d3;
   color: #ffffff;
   text-decoration: none;
-  width: 12px;
-  height: 36px;
-  display: block;
-  padding-top: 11.36px;
-  padding-bottom: 12.64px;
-  padding-left: 23.45px;
-  padding-right: 24.55px;
-}
-
-.pagination-item:nth-child(5) ~ li .pagination-link {
-  width: 23px;
-  padding-left: 18.45px;
-  padding-right: 18.55px;
+  min-width: 60px;
+  min-height: 60px;
+  padding: 0 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box
 }
 
 .pagination-link.current {
