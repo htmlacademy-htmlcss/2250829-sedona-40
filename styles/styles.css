@@ -829,7 +829,8 @@ img {
   border: none;
   padding: 8px 50px;
   margin-bottom: 32px;
-  cursor: pointer
+  cursor: pointer;
+  border-radius: 4px
 }
 
 .catalog-filter-submit:hover {
@@ -861,7 +862,8 @@ img {
   color: #ffffff;
   border: none;
   padding: 8px 57.5px;
-  cursor: pointer
+  cursor: pointer;
+  border-radius: 4px
 }
 
 .catalog-filter-reset:hover {
