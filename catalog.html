@@ -57,48 +57,54 @@
           </ol>
           <section class="filter" data-test="filter">
             <h2 class="visually-hidden">Фильтры</h2>
-            <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="post">
+            <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="post" name="filter-form">
               <fieldset class="catalog-filter-group catalog-filter-group-infrastructure">
                 <legend class="fieldset-title">Инфраструктура:</legend>
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
-                    <label>
-                      <input type="checkbox" name="pool" checked>
+                    <label class="infrastructure-label">
+                      <input class="visually-hidden" type="checkbox" name="pool" checked>
+                      <span class="control-mark"></span>
                       Бассейн
                     </label>
                   </li>
                   <li class="catalog-filter-item">
-                    <label>
-                      <input type="checkbox" name="parking" checked>
+                    <label class="infrastructure-label">
+                      <input class="visually-hidden" type="checkbox" name="parking" checked>
+                      <span class="control-mark"></span>
                       Парковка
                     </label>
                   </li>
                   <li class="catalog-filter-item">
-                    <label>
-                      <input type="checkbox" name="wi-fi">
+                    <label class="infrastructure-label">
+                      <input class="visually-hidden" type="checkbox" name="wi-fi">
+                      <span class="control-mark"></span>
                       Wi-Fi
                     </label>
                   </li>
                 </ul>
               </fieldset>
               <fieldset class="catalog-filter-group catalog-filter-group-type">
-                <legend class="fieldset-title">Тип жилья:</legend>
+                <legend class="fieldset-title">Тип Жилья:</legend>
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
-                    <label>
-                      <input type="radio" name="home-type" value="Гостиница" checked>
-                      Гостиницы
+                    <label class="type-label">
+                      <input class="visually-hidden" type="radio" name="home-type" value="Гостиница" checked>
+                      <span class="control-mark"></span>
+                      Гостиница
                     </label>
                   </li>
                   <li class="catalog-filter-item">
-                    <label>
-                      <input type="radio" name="home-type" value="Мотель">
+                    <label class="type-label">
+                      <input class="visually-hidden" type="radio" name="home-type" value="Мотель">
+                      <span class="control-mark"></span>
                       Мотель
                     </label>
                   </li>
                   <li class="catalog-filter-item">
-                    <label>
-                      <input type="radio" name="home-type" value="Апартаменты">
+                    <label class="type-label">
+                      <input class="visually-hidden" type="radio" name="home-type" value="Апартаменты">
+                      <span class="control-mark"></span>
                       Апартаменты
                     </label>
                   </li>
@@ -106,16 +112,24 @@
               </fieldset>
               <fieldset class="catalog-filter-group catalog-filter-group-price">
                 <legend class="fieldset-title">Стоимость, ₽:</legend>
-                <label class="filter-range-control">От <input type="text" name="min-interval" value="0"
-                    class="interval"></label>
-                <label class="filter-range-control">До <input type="text" name="max-interval" value="9000"
-                    class="interval"></label>
-                <button class="filter-range-handle min" type="button" >
-                  <span class="visually-hidden">Управление нижней границей стоимости</span>
-                </button>
-                <button class="range-toggle toggle-max" type="button">
-                  <span class="visually-hidden">Управление верхней границей стоимости</span>
-                </button>
+                <div class="catalog-labels-container">
+                  <label class="filter-range-control filter-range-control-min interval">
+                    <input type="text" name="min-interval" value="0">
+                    <span>от</span>
+                  </label>
+                  <label class="filter-range-control filter-range-control-max interval">
+                    <input type="text" name="max-interval" value="9000">
+                    <span>до</span>
+                  </label>
+                </div>
+                <div class="catalog-range">
+                  <button class="filter-range-handle toggle-min" type="button" >
+                    <span class="visually-hidden">Управление нижней границей стоимости</span>
+                  </button>
+                  <button class="range-toggle toggle-max" type="button">
+                    <span class="visually-hidden">Управление верхней границей стоимости</span>
+                  </button>
+                </div>
               </fieldset>
               <div class="filter-buttons-container">
                 <button class="catalog-filter-submit" type="submit">Применить</button>
@@ -134,17 +148,17 @@
             </select>
             <ul class="view-buttons">
               <li class="view-button-item current">
-                <a class="view-button-card" href="#">
+                <a class="view-button-card" href="catalog.html?view=card">
                   <span class="visually-hidden">Показать карточками</span>
                 </a>
               </li>
               <li class="view-button-item">
-                <a class="view-button-tile" href="#">
+                <a class="view-button-tile" href="catalog.html?view=tile">
                   <span class="visually-hidden">Показать плиткой</span>
                 </a>
               </li>
               <li class="view-button-item">
-                <a class="view-button-list" href="#">
+                <a class="view-button-list" href="catalog.html?view=list">
                   <span class="visually-hidden">Показать списком</span>
                 </a>
               </li>
@@ -233,10 +247,10 @@
         <section class="subscribe" data-test="subscribe">
           <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
           <p class="subscribe-text">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
-          <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+          <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post" name="newsletter-form">
             <p class="subscribe-form-name">
               <label class="visually-hidden" for="user-email">Ваш e-mail</label>
-              <input class="email-input" type="email" placeholder="Ваш e-mail" id="user-email" required>
+              <input class="email-input" type="email" placeholder="Ваш e-mail" id="user-email" required name="email">
             </p>
             <button class="subscribe-button" type="submit">Подписаться</button>
           </form>
