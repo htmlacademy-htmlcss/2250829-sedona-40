@@ -94,6 +94,14 @@ img {
   position: relative
 }
 
+.navigation-link:hover {
+  opacity: 50%
+}
+
+.navigation-link:active {
+  opacity: 30%
+}
+
 .navigation-link.current::before {
   content: "";
   left: 16px;
@@ -123,6 +131,14 @@ img {
   box-sizing: border-box;
   text-decoration: none;
   position: relative
+}
+
+.navigation-user-link:hover {
+  opacity: 50%
+}
+
+.navigation-user-link:active {
+  opacity: 30%
 }
 
 .navigation-user-link-favourite {
