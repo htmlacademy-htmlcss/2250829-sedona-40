@@ -227,7 +227,6 @@ img {
   width: 651px;
   margin: 69px auto;
   margin-bottom: 90px;
-  white-space: nowrap;
 }
 
 .lead {
@@ -245,6 +244,7 @@ img {
   text-align: center;
   color: #333333;
   margin: 0;
+  width: 655px
 }
 
 .advantages-list {
@@ -315,8 +315,8 @@ img {
   line-height: 21px;
   text-align: center;
   margin: 0;
-  white-space: nowrap;
   order: 3;
+  width: 232px
 }
 
 .advantages-item:nth-child(3n) {
@@ -376,7 +376,6 @@ img {
   box-sizing: border-box;
   padding: 81px 85px;
   min-height: 385px;
-  white-space: nowrap
 }
 
 .infrastructure-item::before {
@@ -772,6 +771,9 @@ img {
 
 .catalog-filter-form {
   display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  width: 1061px
 }
 
 .catalog-filter-group {
@@ -992,7 +994,9 @@ input:focus ~ .control-mark {
 }
 
 .filter-buttons-container {
-  margin-top: auto
+  margin-top: auto;
+  order: 999;
+
 }
 
 .catalog-filter-submit {
@@ -1105,7 +1109,8 @@ input:focus ~ .control-mark {
   appearance: none;
   background-image: url(../images/select-icon.svg);
   background-repeat: no-repeat;
-  background-position: right 18px center
+  background-position: right 18px center;
+  padding-right: 52px
 }
 
 .catalog-hotels-sort:hover {
@@ -1201,7 +1206,8 @@ input:focus ~ .control-mark {
   column-gap: 20px;
   row-gap: 16px;
   border: 1px solid #e6e6e6;
-  border-radius: 4px
+  border-radius: 4px;
+  grid-template-rows: 1fr;
 }
 
 .catalog-hotel-card-link {
@@ -1346,7 +1352,6 @@ input:focus ~ .control-mark {
   padding-left: 23px;
   padding-top: 9px;
   padding-bottom: 8px;
-  height: 37px;
   box-sizing: border-box;
   border-radius: 4px
 }
@@ -1456,10 +1461,12 @@ input:focus ~ .control-mark {
   text-align: center;
   padding-left: 24px;
   padding-right: 24px;
-  padding: 17px 21px;
-  width: 60px;
-  height: 60px;
-  display: block;
+  min-width: 60px;
+  min-height: 60px;
+  padding: 0 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   box-sizing: border-box;
 }
 
@@ -1472,13 +1479,13 @@ input:focus ~ .control-mark {
 
 /*Модальное окно*/
 .modal-container {
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
   display: flex;
+  position: fixed
 }
 
 .modal-container-hidden {
@@ -1493,7 +1500,8 @@ input:focus ~ .control-mark {
   border-radius: 30px;
   color: #000000;
   position: relative;
-  box-sizing: border-box
+  box-sizing: border-box;
+  overflow-y: scroll
 }
 
 .modal-search {
@@ -1553,7 +1561,7 @@ input:focus ~ .control-mark {
   text-align: left;
   width: 440px;
   height: 48px;
-  margin-left: 20px;
+  margin-left: 18px;
   padding: 12px 20px;
   box-sizing: border-box;
   padding-right: 60px;
@@ -1627,18 +1635,20 @@ input:focus ~ .control-mark {
 
 .modal-form-submit {
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 24px;
   text-align: center;
-  vertical-align: middle;
   color: #ffffff;
   background-color: #83b3d3;
   border: none;
   cursor: pointer;
   width: 577px;
-  height: 60px;
   border-radius: 10px;
   text-transform: uppercase;
+  padding: 18px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .modal-form-submit:hover {
@@ -1710,7 +1720,7 @@ input:focus ~ .control-mark {
   margin-bottom: 48px
 }
 
-.adults-number, .kids-number {
+.adults-number {
   margin-right: 46px;
 }
 
@@ -1722,17 +1732,20 @@ input:focus ~ .control-mark {
   color: #ffffff;
   width: 256px;
   padding: 18px;
-  padding-top: 15px;
+  padding-top: 20px;
   padding-left: 22px;
+  padding-bottom: 23px;
+  padding-right: 18px;
   box-sizing: border-box;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-align: left;
   top: 41px;
-  left: 46%;
-  transform: translateX(-46%);
-  display: none
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  min-height: 143px;
 }
 
 .tooltip-toggle:hover ~ .kids-tooltip, .tooltip-toggle:focus ~ .kids-tooltip {
@@ -1744,8 +1757,7 @@ input:focus ~ .control-mark {
 }
 
 .kids-number {
-  width: 85px;
-  display: flex
+  margin-right: 10px
 }
 
 .tooltip-toggle {
@@ -1757,8 +1769,6 @@ input:focus ~ .control-mark {
   background-repeat: no-repeat;
   background-position: center;
   border: none;
-  vertical-align: middle;
-  margin-left: 10px;
   cursor: pointer;
 }
 
@@ -1766,6 +1776,9 @@ input:focus ~ .control-mark {
   width: 26px;
   height: 26px;
   position: relative;
+  margin-right: 46px;
+  display: flex;
+  align-items: center
 }
 
 .kids-tooltip::after {
