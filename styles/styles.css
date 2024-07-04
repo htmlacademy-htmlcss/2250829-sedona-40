@@ -1501,7 +1501,6 @@ input:focus ~ .control-mark {
   color: #000000;
   position: relative;
   box-sizing: border-box;
-  overflow-y: scroll
 }
 
 .modal-search {
@@ -1673,7 +1672,7 @@ input:focus ~ .control-mark {
 .modal-date-label {
   margin-bottom: 4px;
   display: flex;
-  align-items: center
+  align-items: center;
 }
 
 .modal-input-container {
