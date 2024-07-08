@@ -149,23 +149,23 @@
     </div>
     <div class="modal-container">
       <div class="modal modal-search">
-        <button class="modal-close-button">
+        <a class="modal-close-button" href="index.html">
           <svg aria-hidden="true" width="15" height="15" viewBox="0 0 15 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path d="M14.4907 1.78279L13.1984 0.490479L7.49072 6.19817L1.78303 0.490479L0.490723 1.78279L6.19842 7.49048L0.490723 13.1982L1.78303 14.4905L7.49072 8.78279L13.1984 14.4905L14.4907 13.1982L8.78303 7.49048L14.4907 1.78279Z"/>
           </svg>
           <span class="visually-hidden">Закрыть</span>
-        </button>
+        </a>
         <section class="modal-content" data-test="modal">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post" name="modal-form">
             <label class="modal-date-label">
               Дата Заезда:
-              <input class="modal-date-input modal-date-input-in" type="text" value="27 апреля 2020" name="modal-check-in">
+              <input class="modal-date-input modal-date-input-in" type="text" value="27 апреля 2020" placeholder="27 апреля 2020" name="modal-check-in" required>
             </label>
             <p class="modal-date-message modal-date-message-error">Мы не можем отправить вас в прошлое.</p>
             <label class="modal-date-label">
               Дата Выезда:
-              <input class="modal-date-input modal-date-input-out" type="text" value="1 сентября 2023" name="modal-check-out">
+              <input class="modal-date-input modal-date-input-out" type="text" value="1 сентября 2023" placeholder="1 сентября 2023" name="modal-check-out" required>
             </label>
             <p class="modal-date-message">На эти даты есть свободные номера. Пока есть.</p>
             <div class="modal-people-container">
@@ -177,7 +177,7 @@
                   </svg>
                   <span class="visually-hidden">Уменьшить</span>
                 </button>
-                <input class="modal-people-input" type="number" id="adults" value="2" name="adults">
+                <input class="modal-people-input" type="number" id="adults" value="2" placeholder="2" name="adults" required>
                 <button class="people-plus" type="button">
                   <svg aria-hidden="true" width="14" height="14" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z"/>
@@ -201,7 +201,7 @@
                   </svg>
                   <span class="visually-hidden">Уменьшить</span>
                 </button>
-                <input class="modal-people-input" type="number" id="kids" value="2" name="kids">
+                <input class="modal-people-input" type="number" id="kids" value="2" placeholder="2" name="kids">
                 <button class="people-plus" type="button">
                   <svg aria-hidden="true" width="14" height="14" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z"/>
@@ -210,7 +210,7 @@
                 </button>
               </div>
             </div>
-            <button class="modal-form-submit">Найти</button>
+            <button class="modal-form-submit" type="submit">Найти</button>
           </form>
         </section>
       </div>
