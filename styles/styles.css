@@ -1733,7 +1733,8 @@ img {
   box-sizing: border-box
 }
 
-.people-minus, .people-plus {
+.people-minus,
+.people-plus {
   background-color: #f2f2f2;
   border: none;
   width: 20px;
@@ -1743,7 +1744,8 @@ img {
   align-items: center;
   color: rgba(117, 97, 87, 0.3);
   cursor: pointer;
-  border-radius: 4px
+  border-radius: 4px;
+  padding: 0;
 }
 
 .people-minus:hover,
