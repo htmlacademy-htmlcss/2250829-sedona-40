@@ -757,14 +757,17 @@ img {
   background-repeat: no-repeat;
 }
 
-.site-tree-item-home {
-  margin-right: 10px;
+.site-tree-item:not(:last-child) {
+  margin-right: 10px
+}
+
+.site-tree-item:not(:last-child) .site-tree-link {
+  margin-right: 10px
 }
 
 .site-tree-item-home a {
   min-width: 13px;
   min-height: 15px;
-  margin-right: 10px
 }
 
 .site-tree-link {
