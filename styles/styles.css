@@ -740,7 +740,8 @@ img {
   list-style-type: none;
   margin-bottom: 40px;
   align-items: center;
-  flex-wrap: wrap
+  flex-wrap: wrap;
+  gap: 10px
 }
 
 .site-tree-item {
@@ -755,10 +756,6 @@ img {
   height: 20px;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-.site-tree-item:not(:last-child) {
-  margin-right: 10px
 }
 
 .site-tree-item:not(:last-child) .site-tree-link {
